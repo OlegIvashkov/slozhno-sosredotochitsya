@@ -1,73 +1,35 @@
-:root.theme-light {
-  --main-background-color: #fff1f7;
-  --main-title-color: #FFC2E6;  
-  --main-font-color: #353430;
-  --main-text-color: #353430;
-  --accent-color: #FF8DCB;
-  --decoration-color: #353430;     
-} 
-
 .page.theme_light {
-  --main-background-color: #fff1f7;
-  --main-title-color: #FFC2E6;  
-  --main-font-color: #353430;
-  --main-text-color: #353430;
-  --accent-color: #FF8DCB;
-  --decoration-color: #353430;
+  --main-color: #353430;
+  --title-color: #FFC2E6;
+  --title-shadow-color: #FF0070;
+  --subheading-fill-color: #FF8DCB;
+  --subheading-text-color: #353430;
+  --paragraph-link-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --button-hover-color: #ADA4A6;
+  --background-color: #FFF1F7; 
+  background-image: url(../images/cover-image-light.png);
 }  
-
-.theme_light .header__decoration {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap; 
-} 
-
-.header__theme-menu-button {
-  color: var(--decoration-color);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px solid var(--decoration-color);
-}
-
-.header__theme-menu-button:focus {
-  outline: none;
-  border-bottom: 1px solid var(--decoration-color);
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--decoration-color);
-  pointer-events: none;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-background-color: #fff1f7;
-    --main-title-color: #FFC2E6;  
-    --main-font-color: #353430;
-    --main-text-color: #353430;
-    --accent-color: #FF8DCB; 
-    --decoration-color: #353430;     
+  --main-color: #353430;
+  --title-color: #FFC2E6;
+  --title-shadow-color: #FF0070;
+  --subheading-fill-color: #FF8DCB;
+  --subheading-text-color: #353430;
+  --paragraph-link-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --button-hover-color: #ADA4A6;
+  --background-color: #FFF1F7;        
   }
-  .header {
+  .page.theme_auto {
     background-image: url(../images/cover-image-light.png);
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;     
+  }
+  .theme_auto .header__decoration-container {
+    margin-bottom: calc(var(--h-decor-menu) + 25px);
   }
   .theme_auto .header__decoration {
-    position: absolute;
-    inline-size: 1px;
-    block-size: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    white-space: nowrap; 
+    display: none;
   }
 } 
-

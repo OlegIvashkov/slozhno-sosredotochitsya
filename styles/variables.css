@@ -1,8 +1,30 @@
 :root {
-  --main-background-color: #000028;
-  --main-title-color: #DB00FF;  
-  --main-font-color: #F1B2CE;
-  --main-text-color: #000028;
-  --accent-color: #FF0070; 
-  --decoration-color: #FF0070;   
+  --main-color: #FF0070;
+  --title-color: #DB00FF;
+  --title-shadow-color: #FF0070;
+  --subheading-fill-color: #FF0070;
+  --subheading-text-color: #000028;
+  --paragraph-link-color: #F1B2CE;
+  --link-shadow-color: #FF0070;
+  --button-hover-color: #FF91C1;
+  --background-color: #000028;
+  /* Отступы в header */
+  --h-decor-menu: 40px;
+  --h-menu-title: 65px;
+  --h-title-block: 55px;
+  --h-block-decor: 32px;
+  --h-title-margin: 9px;
+  /* Отступы в main */
+  --m-header-main: 30px;
+  --m-above-heading: 20px;
+  --m-above-text: 13.75px;
+  --m-below-section: 50px;
+  --m-pictures-gap: 6.5px;
+  /* Отступы в footer */
+  --f-main-footer: 31px;
+  /* Прочие отступы и размеры */
+  --decor-margin: 9px;
+  --page-margin: 9px; 
+  --heading-padding: 10px;   
+  --article-line-height: 1.449rem;
 } 

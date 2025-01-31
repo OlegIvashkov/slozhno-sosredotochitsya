@@ -1,0 +1,111 @@
+<div class="horizontal-line-container"><div class="horizontal-line"></div></div>
+      <div class="header__grid-container">            
+      <div class="header__decoration-container">        
+        <div class="header__decoration">REC</div>
+        <div class="vertical-line"></div>
+      </div>
+
+
+      <main class="main__content">
+      <section class="section">
+      <h1 class="main__heading"></h1>
+      <div>
+      <h2 class="main__subheading"></h2>
+      <p class="main__article"></p>
+      </div>
+      <div>
+      <h2 class="main__subheading"></h2>
+      <p class="main__article"></p>
+      </div>
+      </main>
+
+    <main class="main__content">
+      <section class="section">      
+      </section>
+      <section class="section">      
+      </section>
+      <section class="section">      
+      </section>
+      <section class="main__pictures">        
+      </section>
+    </main>
+
+    Сейчас элемент с классом .decorated_zone::before отображается в левой верхней части страницы. Как изменить css, чтобы этот элемент переместить в верхнюю правую часть страницы?
+html:
+    <footer class="footer decorated_zone">      
+      <div class="footer__title">
+        <p class="footer__title-text">focus</p>        
+      </div>      
+    </footer>
+
+css:
+    .footer {
+      margin-top: var(--f-main-footer);
+      min-height: 668px;
+      margin-left: var(--page-margin);
+      margin-right: var(--page-margin);
+      display: flex;
+      flex-wrap: wrap;  
+    }
+    
+    footer.decorated_zone::before {
+      content: '';
+      font-size: 18px;
+      width: 25px;
+      height: 25px;
+      border-right: 1px solid var(--main-color);
+      border-top: 1px solid var(--main-color);   
+    }
+
+
+      .section_2 {
+  margin-top: 23px;
+}
+
+.section_3 {
+  margin-top: 92px;  
+}
+
+@media (375px < width <= 768px) {
+  .section_1 {
+    margin-bottom: 58px;
+  }
+  .section_2 {
+    margin-bottom: 81px;
+  }
+}
+
+@media (768px <= width) {
+  .section_1 {
+    display: grid;
+    grid-template-columns: 1.08fr 2fr;
+  }
+  .section_1_heading {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    padding-right: 20px;    
+  }
+  .section_3 {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr;
+    column-gap: 5px;
+  }
+}
+
+@media (1024px <= width) { 
+  .section_1 {    
+    grid-template-columns: 1.01fr 2fr;
+    margin-bottom: 60px;
+  }
+  .section_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 19px;
+  }
+  .section_3 {
+    column-gap: 0px;
+    grid-template-columns: 0.98fr 1.9fr;
+    margin-top: 60px;
+  }
+}
+ 
