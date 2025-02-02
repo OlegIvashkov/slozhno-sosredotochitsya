@@ -8,23 +8,18 @@
   --link-shadow-color: #FF0070;
   --button-hover-color: #FF91C1;
   --background-color: #000028;
-  /* Отступы в header */
-  --h-decor-menu: 40px;
-  --h-menu-title: 65px;
-  --h-title-block: 55px;
-  --h-block-decor: 32px;
-  --h-title-margin: 9px;
   /* Отступы в main */
-  --m-header-main: 30px;
-  --m-above-heading: 20px;
-  --m-above-text: 13.75px;
-  --m-below-section: 50px;
-  --m-pictures-gap: 6.5px;
+  --main-header-main: 38.5px;
+  --main-above-heading: 20px;
+  --main-above-text: 13.75px;
+  --main-below-section: 50px;
+  --main-pictures-gap: 6.5px;
   /* Отступы в footer */
-  --f-main-footer: 31px;
+  --footer-main-footer: 30px;
   /* Прочие отступы и размеры */
   --decor-margin: 9px;
   --page-margin: 9px; 
+  --header-title-left-margin: 9px;
   --heading-padding: 10px;   
   --article-line-height: 1.449rem;
 } 

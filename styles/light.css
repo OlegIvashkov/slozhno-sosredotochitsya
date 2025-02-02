@@ -26,9 +26,6 @@
   .page.theme_auto {
     background-image: url(../images/cover-image-light.png);
   }
-  .theme_auto .header__decoration-container {
-    margin-bottom: calc(var(--h-decor-menu) + 25px);
-  }
   .theme_auto .header__decoration {
     display: none;
   }
